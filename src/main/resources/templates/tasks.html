@@ -7,5 +7,12 @@
 </head>
 <body>
     <h1>Todo Application</h1>
+    <div>
+        <th:block th:each="task : ${tasks}">
+            <div>
+                <span th:text="${task.title}">Task Title</span>
+            </div>
+        </th:block>
+    </div>
 </body>
 </html>
