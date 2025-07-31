@@ -30,5 +30,9 @@ public class TaskService {
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
     }
+
+    public void toggleTask(Long id) {
+        
+    }
     
 }

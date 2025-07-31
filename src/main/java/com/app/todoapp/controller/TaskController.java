@@ -41,5 +41,11 @@ public class TaskController {
         taskService.deleteTask(id);
         return "redirect:/";    // refreshing the page once a task has been deleted
     }
+
+    
+    @GetMapping("/{id}/toggle")
+    public String toggleTask(@PathVariable Long id) {
+        taskService.toggleTask(id);
+        return "redirect:/";    
     
 }
